@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   return (
+    <>
+      <style jsx>{`
+    
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+     
+      body {
+        padding: 0;
+        margin: 0;
+      }
+        .App{
+          background: #F8E9DD;
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items : center;
+          flex-direction: column;
+        }
+        * {
+          box-sizing: border-box;
+        }
+      `}
+      </style>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header/>
+    <Footer/>
     </div>
+    </>
   );
 }
 
